@@ -54,7 +54,7 @@ img {
 }
 
 .nav {
-  background: var(--focusClr);
+  background: var(--baseClr);
 }
 
 .nav .brand-logo {
