@@ -158,7 +158,7 @@ img {
 /* Media Queries */
 
 /* Landscape Mobile */
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 550px) and (max-width: 750px) {
   .sidenav .sidenav-wrapper {
     padding: 20px;
     display: grid;
@@ -191,11 +191,29 @@ img {
 }
 
 /* Tablets*/
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+  .sidenav .sidenav-wrapper {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 60px minmax(250px, 400px) 1fr 80px;
+    grid-row-gap: 20px;
+  }
+
+  .sidenav .sidenav-wrapper .sidenav-items {
+    display: unset;
+  }
+
+  .sidenav .sidenav-wrapper .sidenav-items li a {
+    font-size: 2rem;
+  }
+
+  .sidenav .sidenav-wrapper .sidenav-social a > i {
+    font-size: 3rem;
+  }
 }
 
 /* Desktops*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .nav-wrapper,
   .site-wrapper {
     padding-left: 30px;
